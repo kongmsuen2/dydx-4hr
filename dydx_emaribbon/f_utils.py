@@ -34,7 +34,7 @@ def get_ISO_times(entry_time, resolution):
     now = convert_time(datetime.now())
     time_diff = now - entry_time
     print(time_diff)
-    diff = math.ceil(time_diff.total_seconds() / (60*5))
+    diff = math.ceil(time_diff.total_seconds() / (60*240))
     near_100 = int(math.ceil(diff / 100.0)) * 100
     total_call = near_100 / 100
     date_start = [now]
